@@ -1,0 +1,150 @@
+* {
+    font-family: montserrat;
+}
+
+body {
+    background: #f1fbff;
+}
+
+.logo {
+    border-radius: 50%;
+    height:60px;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+/* Navbar */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand h2 {
+    color: #6A0E4F;
+    letter-spacing: 2px;
+    margin-left: 5px;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+}
+
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #6A0E4F;
+    margin-top: 25px;
+}
+
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.navbar-nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #6A0E4F;
+}
+
+.w-100 {
+    height: 100vh;
+}
+
+/* Service */
+.services .card-body i {
+    font-size: 50px;
+
+}
+
+/* Team */
+.team .card-body i {
+    font-size: 20px;
+}
+
+.team .card {
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* portfolio */
+.portfolio .card {
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Media */
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .carousel-caption {
+        bottom: 37px;
+    }
+
+    .carousel-caption p {
+        width: 100%;
+    }
+
+    .card {
+        margin-bottom: 50px;
+    }
+
+    .img-area img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .carousel-caption {
+        bottom: 125px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 17px;
+    }
+
+    .carousel-caption a {
+        padding: 10px 15px;
+    }
+
+    .carousel-caption p {
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;
+    }
+
+    .about-text {
+        padding-top: 50px;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+}
